@@ -14,6 +14,7 @@ class PartOne(unittest.TestCase): # Test the downloaded csv file
         # print(len(self.file_lines[0].split(",")))
         # print(self.file_lines[0].split(",")[0])
         # print(self.file_lines[0].split(",")[1])
+        # print(len(self.file_lines))
         self.file.close()
     def test_review_file(self): # Test whether the csv file is as described on the kaggle website
         # Test whether the records are over 67k
@@ -23,11 +24,11 @@ class PartOne(unittest.TestCase): # Test the downloaded csv file
 
 class PartTwo(unittest.TestCase): # Test modle classes
 
-    # Test if the
+#     # Test if the
 
 
 if __name__ == "__main__":
     unittest.main(verbosity = 2)
-    # # For debug
+    # For debug
     # a = PartOne()
     # a.setUp()

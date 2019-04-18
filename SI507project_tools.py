@@ -36,7 +36,7 @@ class Company(db.Model):
     headquater = db.Column(db.String(250), nullable = True)
     size = db.Column(db.String(250), nullable = True)
     founding_time = db.Column(db.Integer, nullable = True)
-    type = db.Column(db.String(250), nullable = True)
+    company_type = db.Column(db.String(250), nullable = True)
     industry = db.Column(db.String(250), nullable = False)
     revenue = db.Column(db.String(250), nullable = True)
     ceo = db.Column(db.String(250), nullable = True)
@@ -67,7 +67,7 @@ class Review(db.Model):
 ## Function for calculating the most frequent words in "Pros" reviews ##
 
 # I need a list of all Pros reviews of each company, thus 6 lists in total:
-# S1 
+# S1
 # Each review needs to be cleaned up so that there is no "," "." and "*" before being put in the list
 
 
