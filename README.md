@@ -1,6 +1,6 @@
 # Project Title
 
-What employees say about Big Tech?
+What employees say about Big Tech
 
 [Link to this repository](https://github.com/chenlicl0627/SI507-Final-Project)
 
@@ -9,6 +9,7 @@ What employees say about Big Tech?
 ## Project Description
 
 This project performs some simple data analysis based on over 67k employee reviews for six big technology companies, including Google, Amazon, Apple, Microsoft Facebook and Netflix, between 2008 and 2018 on Glassdoor.
+
 
 ## How to run
 
@@ -26,8 +27,7 @@ Then, you can install this project's dependencies:
 
 > pip install -r requirements.txt
 
-2. Second, you should run `python SI507project_tools.py` to populate a sql database called "company_reviews.db". This probably will take you about 3-5 mins.
-
+2. Second, you should run `python SI507project_tools.py` to populate a sql database called "company_reviews.db". This probably will take about 3-5 mins.
 
 3. **VERY IMPORTANT** Once you get the database in place, comment out the following code at the end of the "SI507project_tools.py" file:
 ```
@@ -40,15 +40,17 @@ insert_review_data("employee_reviews.csv")
 
 4. After you comment out and uncomment the code as instructed above, run `python SI507project_tools.py runserver` to initiate the flask app.
 
+
 ## How to use
 
 1. Go to the homepage of the website by typing the url "http://127.0.0.1:5000/" in your browser (e.g. Chrome, Safari).
 2. As explained on the homepage, there are 2 more routes on this website in addition to the homepage. Each route has its corresponding button which will bring you to that destination.
-- Homepage![homepage](images/homepage.jpg)
+- Homepage:![homepage](images/homepage.jpg)
 - Route 1:
-  - Step 1:
-  - Step 2:
-- Route 2:
+  - Choose review type: ![choose review type](review_type_form.jpg)
+  - If the user selects "Pros" then, they should see: ![pros](pros_review.jpg)
+  - If the user selects "Cons" then, they should see: ![cons](cons_review.jpg)
+- Route 2: ![average work-life balance rating](work-life-balance_rating.jpg)
 
 
 ## Routes in this application
@@ -58,30 +60,45 @@ insert_review_data("employee_reviews.csv")
 - `/themostfrequentwords` -> This is the result page of last route. Users will see the most frequent word(s) of the selected type of reviews for each company.
 - `/work_life_balance` -> This is a page for users to review the average work-life balance rating for each company.
 
+
 ## How to run tests
 
 run `python SI507project_tests.py`
+
 
 ## In this repository:
 
 - SI507project_tools.py
 - SI507project_db_populate.py
 - SI507project_tests.py
-- stopwords.py
+- helper_functions.py
+
 - company.csv
 - employee_reviews.csv
+
+- stopwords.py
+
 - README.md
+
 - requirements.txt
+
 - database_diagram.png
+
 - sample_db
   - company_reviews.db
+
 - templates
   - frequent_words.html
   - homepage.html
   - pros_or_cons_form.html
   - work_life_balance.html
+
 - images
   - homepage.jpg
+  - review_type_form.jpg
+  - pros_review.jpg
+  - cons_review.jpg
+  - work-life-balance_rating.jpg
 
 ---
 
@@ -92,6 +109,7 @@ Please check the requirements you have accomplished in your code as demonstrated
 - [ ] This is an incomplete requirement.
 
 Below is a list of the requirements listed in the rubric for you to copy and paste.  See rubric on Canvas for more details.
+
 
 ### General
 
@@ -105,6 +123,7 @@ Below is a list of the requirements listed in the rubric for you to copy and pas
 - [x] Includes EVERY file needed in order to run the project
 - [x] Includes screenshots and/or clear descriptions of what your project should look like when it is working
 
+
 ### Flask Application
 
 - [x] Includes at least 3 different routes
@@ -112,6 +131,7 @@ Below is a list of the requirements listed in the rubric for you to copy and pas
 - [x] Interactions with a database that has at least 2 tables
 - [x] At least 1 relationship between 2 tables in database
 - [x] Information stored in the database is viewed or interacted with in some way
+
 
 ### Additional Components (at least 6 required)
 
@@ -128,6 +148,11 @@ Below is a list of the requirements listed in the rubric for you to copy and pas
 - [ ] Sourcing of data using web REST API requests
 - [x] Sourcing of data using user input and/or a downloaded .csv or .json dataset
 - [ ] Caching of data you continually retrieve from the internet in some way
+
+FYI:
+- I used Jinja logic in "frequent_words.html" and "work_life_balance.html"
+- I used JS in "homepage.html"
+
 
 ### Submission
 

@@ -1,8 +1,7 @@
 #### Importing ####
-## unittest
-## SI507project_tools.py
+
 import unittest
-from SI507project_tools import remove_punctuation_stopwordsf
+from helper_functions import *
 import csv
 
 class PartOne(unittest.TestCase): # Test the downloaded csv file
