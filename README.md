@@ -47,10 +47,10 @@ insert_review_data("employee_reviews.csv")
 2. As explained on the homepage, there are 2 more routes on this website in addition to the homepage. Each route has its corresponding button which will bring you to that destination.
 - Homepage:![homepage](images/homepage.jpg)
 - Route 1:
-  - Choose review type: ![choose review type](review_type_form.jpg)
-  - If the user selects "Pros" then, they should see: ![pros](pros_review.jpg)
-  - If the user selects "Cons" then, they should see: ![cons](cons_review.jpg)
-- Route 2: ![average work-life balance rating](work-life-balance_rating.jpg)
+  - Choose review type: ![choose review type](images/review_type_form.jpg)
+  - If the user selects "Pros" then, they should see: ![pros](images/pros_review.jpg)
+  - If the user selects "Cons" then, they should see: ![cons](images/cons_review.jpg)
+- Route 2: ![average work-life balance rating](images/work-life-balance_rating.jpg)
 
 
 ## Routes in this application
@@ -103,12 +103,6 @@ run `python SI507project_tests.py`
 ---
 
 ## Code Requirements for Grading
-
-Please check the requirements you have accomplished in your code as demonstrated.
-- [x] This is a completed requirement.
-- [ ] This is an incomplete requirement.
-
-Below is a list of the requirements listed in the rubric for you to copy and paste.  See rubric on Canvas for more details.
 
 
 ### General
