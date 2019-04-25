@@ -1,0 +1,10 @@
+<h1>Choose Review Type</h1>
+<p>You are about to review the most frequet word(s) in either the pros reviews or cons reviews of each company.<br>
+Please choose which type of reviews you would like to see:<br></p>
+<form action="http://localhost:5000/themostfrequentwords" method='GET' id="review_type_form">
+<input type="radio" name="review_type" value="pros" checked>Pros<br>
+<input type="radio" name="review_type" value="cons">Cons<br>
+</form>
+<br>
+<button onclick="window.location.href = 'http://localhost:5000';">Back to Homepage</button>
+<button type="submit" form="review_type_form" value="Submit">Submit</button>

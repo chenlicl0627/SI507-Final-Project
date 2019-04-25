@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homepage</title>
+
+<script type="text/javascript">
+    function displayInformation () {
+        document.querySelector('#routes').innerHTML = document.getElementById('my-list').getElementsByTagName('li').length
+    }
+</script>
+</head>
+<body onload = "displayInformation();">
+    <h1> Employee Reviews for Big Tech Companies </h1>
+	<h2> Introduction </h2>
+    <p> On this website you will find some simple data analysis based on over 67k employee reviews for six big technology companies, including Google, Amazon, Apple, Microsoft Facebook and Netflix, between 2008 and 2018 on Glassdoor.<br>
+	I acquired the dataset from kaggle.com which you can see <a href="https://www.kaggle.com/petersunga/google-amazon-facebook-employee-reviews">HERE</a></p>
+
+	<h2> What you can do on this website </h2>
+	<p> In addition to the homepage, there are another <span id = "routes"></span> pages on this website:</p>
+    <ul id = "my-list">
+        <li>Reviewing the most frequent word(s) in either the pros or cons reviews of each company.</li><button onclick="window.location.href = 'http://localhost:5000/choose_pros_or_cons';">Select Review Category</button><br>
+        <li>Reviewing the average work-life balance rating for each company.</li> <button onclick="window.location.href = 'http://localhost:5000/work_life_balance';">Review Rating</button><br>
+</body>
+</html>

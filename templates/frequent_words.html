@@ -1,0 +1,14 @@
+{% if review_type == "pros" %}
+<h1>The Most Frequent Word(s) in Pros Reviews</h1>
+{% else %}
+<h1>The Most Frequent Word(s) in Cons Reviews</h1>
+{% endif %}
+
+<ul>
+{% for item in company_word_list %}
+    <li>{{ item[0] }} - {{ item[1] }}</li>
+{% endfor %}
+</ul>
+<br>
+<button onclick="window.location.href = 'http://localhost:5000/choose_pros_or_cons';">Reselct Review Category</button>
+<button onclick="window.location.href = 'http://localhost:5000';">Back to Homepage</button>

@@ -1,0 +1,9 @@
+<h1>Average Work-Life Balance Rating</h1>
+
+<ul>
+{% for item in company_rating_list %}
+    <li>{{ item[0] }} - {{ item[1] }}</li>
+{% endfor %}
+</ul>
+<br>
+<button onclick="window.location.href = 'http://localhost:5000';">Back to Homepage</button>
