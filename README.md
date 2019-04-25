@@ -45,11 +45,11 @@ insert_review_data("employee_reviews.csv")
 
 1. Go to the homepage of the website by typing the url "http://127.0.0.1:5000/" in your browser (e.g. Chrome, Safari).
 2. As explained on the homepage, there are 2 more routes on this website in addition to the homepage. Each route has its corresponding button which will bring you to that destination.
-- Homepage:![homepage](images/homepage.jpg)
-- Route 1:
-  - Choose review type: ![choose review type](images/review_type_form.jpg)
-  - If the user selects "Pros" then, they should see: ![pros](images/pros_review.jpg)
-  - If the user selects "Cons" then, they should see: ![cons](images/cons_review.jpg)
+- Homepage(Route 1):![homepage](images/homepage.jpg)
+- Review the most frequent word(s) of pros/cons reviews for each company (Route 2):
+  - First, users need to choose review type: ![choose review type](images/review_type_form.jpg)
+  - If the user selects "Pros" then they should see: ![pros](images/pros_review.jpg)
+  - If the user selects "Cons" then they should see: ![cons](images/cons_review.jpg)
 - Route 2: ![average work-life balance rating](images/work-life-balance_rating.jpg)
 
 
